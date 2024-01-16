@@ -64,6 +64,7 @@ public abstract class AbstractSession implements Session, Closeable {
 
     private final String sessionId = generateSessionId();
     private int enquireLinkTimer = 60000;
+    private int connectionTimeout = -1;
     private long transactionTimer = 2000;
 
     protected EnquireLinkSender enquireLinkSender;
@@ -118,6 +119,16 @@ public abstract class AbstractSession implements Session, Closeable {
     @Override
     public int getEnquireLinkTimer() {
         return enquireLinkTimer;
+    }
+
+    @Override
+    public void setConnectionTimeout(int connectionTimeout) {
+        this.connectionTimeout = connectionTimeout;
+    }
+
+    @Override
+    public int getConnectionTimeout() {
+        return connectionTimeout;
     }
 
     @Override

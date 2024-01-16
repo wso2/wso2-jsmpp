@@ -57,4 +57,9 @@ public class TrustStoreSSLSocketConnectionFactory implements ConnectionFactory {
       throws IOException {
     return new SocketConnection(sslSocketFactory.createSocket(host, port));
   }
+
+  @Override
+  public Connection createConnection(String host, int port, int timeout) throws IOException {
+    return new SocketConnection(sslSocketFactory.createSocket(host, port));
+  }
 }

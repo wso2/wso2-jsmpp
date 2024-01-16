@@ -105,6 +105,8 @@ public interface Session {
     InterfaceVersion getInterfaceVersion();
     void setEnquireLinkTimer(int enquireLinkTimer);
     int getEnquireLinkTimer();
+    void setConnectionTimeout(int connectionTimeout);
+    int getConnectionTimeout();
     void setTransactionTimer(long transactionTimer);
     long getTransactionTimer();
     SessionState getSessionState();
