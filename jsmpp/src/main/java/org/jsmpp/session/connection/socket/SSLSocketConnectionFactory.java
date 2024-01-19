@@ -47,4 +47,9 @@ public class SSLSocketConnectionFactory implements ConnectionFactory {
       throws IOException {
     return new SocketConnection(socketFactory.createSocket(host, port));
   }
+
+  @Override
+  public Connection createConnection(String host, int port, int timeout) throws IOException {
+    return new SocketConnection(socketFactory.createSocket(host, port));
+  }
 }

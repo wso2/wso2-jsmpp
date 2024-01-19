@@ -65,4 +65,9 @@ public class NoTrustSSLSocketConnectionFactory implements ConnectionFactory {
     return new SocketConnection(socketFactory.createSocket(host, port));
   }
 
+  @Override
+  public Connection createConnection(String host, int port, int timeout) throws IOException {
+    return this.createConnection(host, port);
+  }
+
 }
