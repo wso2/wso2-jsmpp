@@ -66,7 +66,6 @@ public class DefaultComposer implements PDUComposer {
             byte addrTon, byte addrNpi, String addressRange)
             throws PDUStringException {
         StringValidator.validateString(systemId, StringParameter.SYSTEM_ID);
-        StringValidator.validateString(password, StringParameter.PASSWORD);
         StringValidator.validateString(systemType, StringParameter.SYSTEM_TYPE);
         StringValidator.validateString(addressRange, StringParameter.ADDRESS_RANGE);
 
@@ -135,7 +134,6 @@ public class DefaultComposer implements PDUComposer {
     public byte[] outbind(int sequenceNumber, String systemId, String password)
             throws PDUStringException {
         StringValidator.validateString(systemId, StringParameter.SYSTEM_ID);
-        StringValidator.validateString(password, StringParameter.PASSWORD);
 
         PDUByteBuffer buf = new PDUByteBuffer(SMPPConstant.CID_OUTBIND,
             SMPPConstant.STAT_ESME_ROK, sequenceNumber);
