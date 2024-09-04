@@ -114,8 +114,6 @@ public class DefaultDecomposer implements PDUDecomposer {
         StringValidator.validateString(req.getSystemId(),
                 StringParameter.SYSTEM_ID);
         req.setPassword(reader.readCString());
-        StringValidator.validateString(req.getPassword(),
-                StringParameter.PASSWORD);
         req.setSystemType(reader.readCString());
         StringValidator.validateString(req.getSystemType(),
                 StringParameter.SYSTEM_TYPE);
@@ -186,8 +184,8 @@ public class DefaultDecomposer implements PDUDecomposer {
         StringValidator.validateString(req.getSystemId(),
                 StringParameter.SYSTEM_ID);
         req.setPassword(reader.readCString());
-        StringValidator.validateString(req.getPassword(),
-                StringParameter.PASSWORD);
+//        StringValidator.validateString(req.getPassword(),
+//                StringParameter.PASSWORD);
         return req;
     }
 
