@@ -72,6 +72,7 @@
         <slf4j.version>1.7.36</slf4j.version>
         <junit.version>4.13.2</junit.version>
         <testng.version>6.14.3</testng.version>
+        <maven-bundle-plugin.version>5.1.9</maven-bundle-plugin.version>
         <telecom-charsets.version>1.0.1</telecom-charsets.version>
         <commons-codec.version>1.15</commons-codec.version>
         <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
