@@ -8,7 +8,7 @@
         <version>1.4</version>
     </parent>
 
-    <groupId>org.jsmpp</groupId>
+    <groupId>org.wso2.jsmpp</groupId>
     <artifactId>jsmpp-pom</artifactId>
     <version>3.0.0-wso2v4-SNAPSHOT</version>
     <packaging>pom</packaging>
